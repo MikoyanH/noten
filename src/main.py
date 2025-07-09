@@ -13,8 +13,7 @@ from handlers import commands, category  # ← роутеры
 
 # load_dotenv(dotenv_path)
 
-# BOT_TOKEN = os.getenv("BOT_TOKEN")
-BOT_TOKEN = os.environ["BOT_TOKEN"]
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 
 # Теперь можно безопасно создать Bot и Dispatcher
