@@ -1,7 +1,7 @@
 import asyncio
 import os
 import logging
-from dotenv import load_dotenv  # ← не забудь импорт
+# from dotenv import load_dotenv  # ← не забудь импорт
 from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
 from handlers import commands, category  # ← роутеры
