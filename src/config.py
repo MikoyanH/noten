@@ -13,5 +13,10 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+
+# Загружаем нужный .env
+ENV = os.getenv("ENV", "prod")
+env_file = ".env.dev" if ENV == "dev" else ".env"
+load_dotenv(env_file)
+
 BOT_TOKEN = os.getenv("BOT_TOKEN")
